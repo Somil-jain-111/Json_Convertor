@@ -1,0 +1,30 @@
+{
+  "name": "json-extension",
+  "displayName": "JSON Constructor Generator",
+  "description": "Generates TypeScript classes from JSON",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "publisher":"SomilJain",
+  "activationEvents": [
+    "onCommand:json-extension.generateClass"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "json-extension.generateClass",
+        "title": "Generate Class from JSON"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/vscode": "^1.97.0",
+    "typescript": "^5.8.2"
+  }
+}
